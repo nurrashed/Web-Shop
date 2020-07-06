@@ -1,0 +1,236 @@
+<!-- Products -->
+<section class="container px-3 ">
+    <div><strong>Product & Favorites Examples</strong></div>
+
+    <div id="products" class="row no-gutters">
+        <!-- Product 1 -->
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="./images/shop/electronics/01.jpg" class="card-img" alt="Product Name">
+                    <span class="product-sale-label badge badge-success no-border-radius">20% Off</span>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <span class="product-category text-muted">Product Category 1</span>
+                        <p class="product-category text-muted">$100</p>
+                        <p class="card-text">Product Description 1</p>
+
+                        <a productId="1" class="wishlist-btn product-btn ml-2" href="#" onclick="favorite(event, 1)">
+                            <img src="./icons/favorite-24px.svg" alt="Wishlist">
+                            <span class="sr-only">Wishlist</span>
+                        </a>
+
+                        <span class="product-footer">
+                            <span class="product-buttons">
+                                <a productId="1" class="product-btn" href="#" onclick="addToCart(1)">
+                                    <img src="./icons/add_shopping_cart-24px.svg" alt="Shopping cart">
+                                    <span class="sr-only">Shopping Cart</span>
+                                </a>
+                                <a productId="1" class="product-btn" href="#">
+                                    <img src="./icons/compare_arrows-24px.svg" alt="Compare products">
+                                    <span class="sr-only">Compare</span>
+                                </a>
+                            </span>
+                            <span class="product-stars">
+                                <span class="product-review-median">4</span>
+                                <img src="./icons/star_border-24px.svg" alt="Review Result">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="./images/shop/electronics/02.jpg" class="card-img" alt="Product Name">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <span class="product-category text-muted">Product Category 1</span>
+                        <p class="product-category text-muted">$100</p>
+                        <p class="card-text">Product Description 2</p>
+
+                        <a productId="2" class="wishlist-btn product-btn ml-2" href="#" onclick="favorite(event, 2)">
+                            <img src="./icons/favorite_border-24px.svg" alt="Wishlist">
+                            <span class="sr-only">Wishlist</span>
+                        </a>
+
+                        <span class="product-footer">
+                            <span class="product-buttons">
+                                <a productId="2" class="product-btn" href="#" onclick="addToCart(2)">
+                                    <img src="./icons/add_shopping_cart-24px.svg" alt="Shopping cart">
+                                    <span class="sr-only">Shopping Cart</span>
+                                </a>
+                                <a productId="2" class="product-btn" href="#">
+                                    <img src="./icons/compare_arrows-24px.svg" alt="Compare products">
+                                    <span class="sr-only">Compare</span>
+                                </a>
+                            </span>
+                            <span class="product-stars">
+                                <span class="product-review-median">3.5</span>
+                                <img src="./icons/star_border-24px.svg" alt="Review Result">
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p><strong>Shopping Cart Product Examples</strong></p>
+
+        <!-- Shopping Cart Product 1 -->
+        <div class="card border border-info mb-3 w-100">
+            <div class="row no-gutters">
+                <div class="col-md-2.5">
+                    <img src="./images/shop/electronics/01.jpg" class="cart-card-img" alt="Product Name 1">
+                    <span class="product-sale-label badge badge-success no-border-radius">10% Off</span>
+                </div>
+                <div class="col-md-9.5">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Name 1</h4>
+                        <h6 class="text-muted">Product Category 1</h6>
+                        <h5 class="text-danger mt-4">$300 x 2 x 90% = $540.00</h5>
+                        <div class="cart-card-buttons mx-auto mx-sm-0 text-center text-sm-left"
+                            style="max-width: 8rem;">
+                            <div class="form-group mb-2 d-flex justify-content-start">
+                                <label class="mr-2">Quantity</label>
+                                <input class="form-control form-control-sm no-border-radius quantity" type="number"
+                                    min=1 value="2" onchange="updateQuantity(event, 1)">
+                                <!-- updateQuantity(event, productId) -->
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm btn-block mb-2 no-border-radius"
+                                type="button" onclick="updateCart(1)">
+                                <!-- updateCart(productId) -->
+                                <i class="mr-1 fas fa-sync"></i>Update cart</button>
+                            <button class="btn btn-outline-danger btn-sm btn-block mb-2 no-border-radius" type="button"
+                                onclick="deleteProductFromCart(1)">
+                                <!-- deleteProductFromCart(productId) -->
+                                <i class="mr-1 far fa-trash-alt"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart Product 2 -->
+        <div class="card border border-info mb-3 w-100">
+            <div class="row no-gutters">
+                <div class="col-md-2.5">
+                    <img src="./images/shop/electronics/02.jpg" class="cart-card-img" alt="Product Name 2">
+                    <span class="product-sale-label badge badge-success no-border-radius">10% Off</span>
+                </div>
+                <div class="col-md-9.5">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Name 2</h4>
+                        <h6 class="text-muted">Product Category 1</h6>
+                        <h5 class="text-danger mt-4">$300 x 90% = $270.00</h5>
+                        <!-- 
+                                <h5 class="text-danger mt-4">$300 x 2 = $600.00</h5>
+                                <h5 class="text-danger mt-4">$300.00</h5> -->
+                        <div class="cart-card-buttons mx-auto mx-sm-0 text-center text-sm-left"
+                            style="max-width: 8rem;">
+                            <div class="form-group mb-2 d-flex justify-content-start">
+                                <label class="mr-2">Quantity</label>
+                                <input class="form-control form-control-sm no-border-radius quantity" type="number"
+                                    min=1 value="1" onchange="updateQuantity(event, 1)">
+                                <!-- updateQuantity(event, productId) -->
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm btn-block mb-2 no-border-radius"
+                                type="button" onclick="updateCart(1)">
+                                <!-- updateCart(productId) -->
+                                <i class="mr-1 fas fa-sync"></i>Update cart</button>
+                            <button class="btn btn-outline-danger btn-sm btn-block mb-2 no-border-radius" type="button"
+                                onclick="deleteProductFromCart(1)">
+                                <!-- deleteProductFromCart(productId) -->
+                                <i class="mr-1 far fa-trash-alt"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart Product 3 -->
+        <div class="card border border-info mb-3 w-100">
+            <div class="row no-gutters">
+                <div class="col-md-2.5">
+                    <img src="./images/shop/electronics/03.jpg" class="cart-card-img" alt="Product Name 3">
+                </div>
+                <div class="col-md-9.5">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Name 3</h4>
+                        <h6 class="text-muted">Product Category 1</h6>
+                        <h5 class="text-danger mt-4">$300 x 2 = $600.00</h5>
+                        <div class="cart-card-buttons mx-auto mx-sm-0 text-center text-sm-left"
+                            style="max-width: 8rem;">
+                            <div class="form-group mb-2 d-flex justify-content-start">
+                                <label class="mr-2">Quantity</label>
+                                <input class="form-control form-control-sm no-border-radius quantity" type="number"
+                                    min=1 value="2" onchange="updateQuantity(event, 3)">
+                                <!-- updateQuantity(event, productId) -->
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm btn-block mb-2 no-border-radius"
+                                type="button" onclick="updateCart(3)">
+                                <!-- updateCart(productId) -->
+                                <i class="mr-1 fas fa-sync"></i>Update cart</button>
+                            <button class="btn btn-outline-danger btn-sm btn-block mb-2 no-border-radius" type="button"
+                                onclick="deleteProductFromCart(3)">
+                                <!-- deleteProductFromCart(productId) -->
+                                <i class="mr-1 far fa-trash-alt"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shopping Cart Product 4 -->
+        <div class="card border border-info mb-3 w-100">
+            <div class="row no-gutters">
+                <div class="col-md-2.5">
+                    <img src="./images/shop/electronics/04.jpg" class="cart-card-img" alt="Product Name 4">
+                </div>
+                <div class="col-md-9.5">
+                    <div class="card-body">
+                        <h4 class="card-title">Product Name 4</h4>
+                        <h6 class="text-muted">Product Category 1</h6>
+                        <h5 class="text-danger mt-4">$300.00</h5>
+                        <div class="cart-card-buttons mx-auto mx-sm-0 text-center text-sm-left"
+                            style="max-width: 8rem;">
+                            <div class="form-group mb-2 d-flex justify-content-start">
+                                <label class="mr-2">Quantity</label>
+                                <input class="form-control form-control-sm no-border-radius quantity" type="number"
+                                    min=1 value="1" onchange="updateQuantity(event, 4)">
+                                <!-- updateQuantity(event, productId) -->
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm btn-block mb-2 no-border-radius"
+                                type="button" onclick="updateCart(4)">
+                                <!-- updateCart(productId) -->
+                                <i class="mr-1 fas fa-sync"></i>Update cart</button>
+                            <button class="btn btn-outline-danger btn-sm btn-block mb-2 no-border-radius" type="button"
+                                onclick="deleteProductFromCart(4)">
+                                <!-- deleteProductFromCart(productId) -->
+                                <i class="mr-1 far fa-trash-alt"></i>Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p><strong>Shopping Cart Total Example</strong></p>
+
+        <div class="row" style="width:100%">
+            <div class="h3 font-weight-semibold text-center d-flex mb-3" style="width:100%">
+                <div class="ml-auto text-secondary">
+                    <span class="mr-3 badge badge-white no-border-radius">Total:</span>
+                    <span class="badge badge-success no-border-radius cart-total">$1000.50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div data-include-html="html/partials/home-pagination.html"></div> -->
+</section>

@@ -1,0 +1,138 @@
+/* Top navbar */
+a {
+    text-decoration: none !important;
+}
+.border-light{
+    border-color: rgba(255,255,255,0.14) !important;
+}
+
+.bg-dark {
+    background-color: #222 !important;
+}
+
+.pb-2, .py-2 {
+    padding-bottom: 0.7rem!important;
+}
+
+.pt-2, .py-2 {
+    padding-top: 0.7rem!important;
+}
+
+/* Middle navbar */
+.navbar-light {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.input-group-text{
+    background-color: #FFF;
+    font: 400 13.3333px Arial;
+}
+
+.navbar-btn{
+    color: rgba(0,0,0,0.65);
+    font-size: .625rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    letter-spacing: .05em;
+    cursor: pointer;
+    
+}
+
+.navbar-btns .navbar-btn-badge {
+    /* display: block; */
+    position: absolute;
+    top: -.5rem;
+    right: .5rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* font-weight: bold; */
+    line-height: 18px;
+}
+
+.navbar-light .navbar-btn .fas, .navbar-light .navbar-btn:hover {
+    color: rgba(0,0,0,0.9);
+}
+.navbar-btns .navbar-btn .fas {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: -.0625rem;
+}
+/* .fas {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+} */
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.mb-1, .my-1 {
+    margin-bottom: .25rem !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.navbar.navbar-expand-lg{
+    max-height: 84px;
+}
+
+.navbar-expand-lg .navbar-btns .navbar-btn-badge {
+    right: .85rem;
+}
+
+.navbar-expand-lg .navbar-btns .navbar-btn {
+    width: 80px;
+    border-left: 1px solid #e7e7e7;
+}
+
+.bg-secondary {
+    background-color: #f7f7f7 !important;
+}
+
+/* Catagories */
+.text-primary {
+    color: cornflowerblue !important;
+}
+
+.nav-link-inline {
+    color: rgba(0,0,0,0.65);
+    font-weight: 600;
+}
+
+.card-title{
+    margin-bottom: 0px;
+}
+
+.card-text{
+    margin-top: 0.65rem;
+}
+
+.card{
+    border-radius: 0;
+}
+
+/* .page-item:first-child .page-link, .page-item:last-child .page-link{ */
+.page-item .page-link{
+    /* border-radius: 0 !important; */
+    border: 0px;
+    color: #6c757d;
+}
+
+.page-item.active .page-link {
+    background-color:#6c757d;
+    color: #ffffff;
+}

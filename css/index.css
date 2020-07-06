@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800");
+
+body{
+    font-family: "Muli",sans-serif;
+    /* font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important; */
+}
+
+.opacity-75{
+    opacity: 0.75;
+}
+
+.no-border-radius{
+    border-radius: 0;
+}
+
+input, button, select, optgroup, textarea{
+    margin: 0; /* Remove the margin in Firefox and Safari*/
+    font-family: "Muli",sans-serif !important;
+    /*font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+     font-family:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; */
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.icon-small{
+    font-size: small;
+}
+
+.breadcrumb{
+    background-color: #ffffff;
+}
+
+.wishlist-btn{
+    position: absolute;
+    right: 0.60rem;
+    top: 1.2rem;
+}
+
+.product-btn img{
+    color: black;
+    font-size: 15px;
+    margin-right: 0.60rem;
+}
+
+.product-review-median{
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.product-stars{
+    position: absolute;
+    right: 1.20rem;
+    bottom: 1rem;
+}
+
+.product-buttons{
+    position: absolute;
+    left: 1.20rem;
+    bottom: 1rem;
+}
+
+.product-category{
+   font-size: 10pt;
+}
+
+.product-sale-label{
+    position: absolute;
+    left: -1px;
+    top: 0;
+    font-size: large;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+  }
+
+.cart-card-img{
+    width: auto;
+    height: 150px;
+}
+
+.cart-card-buttons{
+    position: absolute;
+    right: 0.60rem;
+    top: 1.2rem;
+}
